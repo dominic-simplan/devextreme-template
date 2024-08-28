@@ -18,8 +18,8 @@
     "sass": "^1.34.1",
     "react-router-dom": "^6.3.0",
     "react-app-polyfill": "^1.0.0",
-    "devextreme": "23.2.3",
-    "devextreme-react": "23.2.3"
+    "devextreme": "23.2.8",
+    "devextreme-react": "23.2.8"
   },
   "scripts": {
     "start": "react-scripts start",
