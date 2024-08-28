@@ -1,6 +1,17 @@
 import { Scheduler } from "devextreme-react";
 import React, { useCallback } from "react";
 import "./home.scss";
+import { Properties } from "devextreme/ui/scheduler";
+
+const views: Properties["views"] = ["day", "week", "month"];
+const dataSource = [
+  {
+    allDay: true,
+    startDate: new Date(),
+    endDate: new Date(),
+    text: "All day event",
+  },
+];
 
 export default function Home() {
   const schedulerRef = React.useRef<Scheduler>(null);
@@ -18,15 +29,8 @@ export default function Home() {
     <React.Fragment>
       <Scheduler
         ref={schedulerRef}
-        dataSource={[
-          {
-            allDay: true,
-            startDate: new Date(),
-            endDate: new Date(),
-            text: "All day event",
-          },
-        ]}
-        views={["day", "week", "month"]}
+        dataSource={dataSource}
+        views={views}
         defaultCurrentView="week"
         allDayPanelMode="allDay"
         cellDuration={60}
