@@ -49,6 +49,6 @@
   },
   "devDependencies": {
     "devextreme-cli": "1.6.5",
-    "devextreme-themebuilder": "23.2.3"
+    "devextreme-themebuilder": "23.2.8"
   }
 }
